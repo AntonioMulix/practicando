@@ -1,0 +1,186 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Flex del main */
+.main__MainContainer {
+    /* background-color: aqua; */
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    row-gap: 1rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.estilo-b .img-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.estilo-b .img-container img {
+    width: 100%;
+}
+
+
+.estilo-b .img-container .favorite img {
+    width: 100%;
+}
+
+.estilo-b .img-container .pric {
+    position: absolute;
+    top: 1em;
+    left: 0em;
+    font-size: 0.6em;
+    background: white;
+    padding: 0.5em;
+    height: 2.5em;
+    width: 10em;
+}
+
+.estilo-b .img-container .favorite {
+    position: absolute;
+    top: 5em;
+    right: 5em;
+    font-size: 0.3em;
+    background: white;
+    padding: 2em;
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.estilo-b .img-container .favorite:hover {
+    background: red;
+}
+
+.estilo-b .img-container .favorite:hover img {
+    fill: white;
+}
+
+.estilo-b a{
+    text-align: center;
+    display: block;
+    margin-top: 0.4em;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 0.5em;
+    border: 0.2em solid black;
+}
+
+.estilo-b a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+    border: 0.2em solid black;
+}
+
+/* Flex del div para toda la movilidad de las cartas */
+.div__flex1 {
+    /* background-color: brown; */
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* Flex de lado izquierdo */
+.cards__flex {
+    /* background-color: blue; */
+    height: auto;
+    width: 15em;
+    flex-grow: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cards__Pro {
+    /* background-color: greenyellow; */
+    width: 100%;
+    height: auto;
+    flex-grow: 0;
+}
+
+.divImg__Producto {
+    flex-grow: 6;
+}
+
+.Desc__Producto {
+    flex-grow: 0;
+}
+
+.Desc__Producto img {
+    width: 100%;
+}
+
+/* .Precio__Producto {
+    flex-grow: 0;
+    flex-basis: 10%;
+} */
+
+.card2 {
+    flex-grow: 5;
+    flex-shrink: 0;
+    flex-basis: 60%;
+}
+
+.card__Txt {
+    flex-grow: 3;
+    width: 100%;
+    text-align: left;
+}
+
+.card__divVideo {
+    height: 10em;
+    flex-grow: 3;
+    width: 80%;
+}
+
+.video__Producto {
+    position: relative;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    height: 18em;
+    overflow: hidden;
+}
+
+.videito {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 320px) {
+
+
+    .video__Producto {
+        position: relative;
+        padding-bottom: 0px;
+        padding-top: 0px;
+        height: 12em;
+        overflow: hidden;
+    }
+    
+    .videito {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
